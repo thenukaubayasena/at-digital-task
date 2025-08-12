@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT Digital - We Crush Your Competitors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <header class="bg-[#4F46E5] shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="assets/logo.png" alt="AT DIGITAL Logo" class="h-10 mr-2">
+                    <img src="assets/logo1.png" alt="AT DIGITAL Logo" class="h-10 mr-2">
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8" style="font-family: 'Inter', sans-serif;">
+                    <a href="#" class="text-white hover:text-purple-200 font-medium">SERVICES</a>
+                    <a href="#" class="text-white hover:text-purple-200 font-medium">ABOUT US</a>
+                    <a href="#" class="text-white hover:text-purple-200 font-medium">CONTACT US</a>
+                    <a href="#" class="text-white hover:text-purple-200 font-medium">CAREERS</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden fixed inset-0 bg-white py-4 z-50" id="mobile-menu" style="font-family: 'Inter', sans-serif;">
+                <div class="flex flex-col h-full">
+                    <!-- Close Button -->
+                    <div class="flex justify-end px-4">
+                        <button id="menu-close" class="text-black focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Menu Items -->
+                    <div class="flex flex-col items-start justify-center px-4 space-y-4">
+                        <a href="#" class="py-2 text-black hover:text-purple-500 text-lg font-medium">HOME</a>
+                        <a href="#" class="py-2 text-black hover:text-purple-500 text-lg font-medium">SERVICES</a>
+                        <a href="#" class="py-2 text-black hover:text-purple-500 text-lg font-medium">ABOUT US</a>
+                        <a href="#" class="py-2 text-black hover:text-purple-500 text-lg font-medium">CONTACT US</a>
+                        <a href="#" class="py-2 text-black hover:text-purple-500 text-lg font-medium">CAREERS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <!-- Background Image -->
+        <div class="bg-cover bg-center w-full h-[50vh] md:h-[90vh]" style="background-image: url('assets/Hero Image.png');">
+            <div class="container mx-auto h-full flex items-end">
+                <!-- This box only shows on laptop/desktop -->
+                <div class="hidden md:block bg-gradient-to-r from-[#4DCA79] to-[#1CBDDD] px-8 py-4 rounded-lg max-w-2xl mb-8 ml-4">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white" style="font-family: 'Inter', sans-serif;">
+                        We Crush Your<br>
+                        Competitors, Goals, And<br>
+                        Sales Records - Without<br>
+                        The B.S.
+                    </h1>
+                    <button class="bg-[#F28D35] hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition duration-300" style="font-family: 'Inter', sans-serif;">
+                        GET FREE CONSULTATION
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- This box only shows on mobile -->
+        <div class="block md:hidden bg-gradient-to-r from-[#4DCA79] to-[#1CBDDD] px-8 py-6 max-w-2xl mx-auto">
+            <h1 class="text-3xl font-bold mb-6 leading-tight text-white" style="font-family: 'Inter', sans-serif;">
+                We Crush Your<br>
+                Competitors,<br>
+                Goals, And Sales<br>
+                Records - Without<br>
+                The B.S.
+            </h1>
+            <button class="bg-[#F28D35] hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition duration-300" style="font-family: 'Inter', sans-serif;">
+                GET FREE CONSULTATION
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 md:px-20">
+        <div class="container mx-auto max-w-6xl space-y-20">
+            
+            <!-- Service 1 -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <!-- Image - Increased size -->
+                <div class="flex-shrink-0 flex justify-center">
+                    <img src="assets/image 2.png" alt="Web & Mobile App Icon" class="w-64 h-64 md:w-80 md:h-80 object-contain">
+                </div>
+                <!-- Text -->
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-3xl md:text-3xl font-semibold text-[#4F46E5] mb-6" style="font-family: 'Poppins', sans-serif;">
+                        Web & Mobile App Development
+                    </h2>
+                    <p class="text-[#000000] text-lg mb-8 leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        Your web and mobile Apps are pieces of the puzzle to grow your<br>
+                        business. We use frameworks which tailor content and engagement<br>
+                        methods to respond to different intents shown by your potential<br>
+                        customers who interact with your business online.
+                    </p>
+                    <button class="bg-[#F28D35] hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-lg" style="font-family: 'Inter', sans-serif;">
+                        LEARN MORE
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center justify-center gap-12">
+                <!-- Image - Increased size -->
+                <div class="flex-shrink-0 flex justify-center">
+                    <img src="assets/image 1.png" alt="Strategy Consulting Icon" class="w-64 h-64 md:w-80 md:h-80 object-contain">
+                </div>
+                <!-- Text -->
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-3xl md:text-3xl font-semibold text-[#4F46E5] mb-6" style="font-family: 'Poppins', sans-serif;">
+                        Digital Strategy Consulting
+                    </h2>
+                    <p class="text-[#000000] text-lg mb-8 leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each component will never work in isolation and every business needs a different mix. We provide a clear concept and strategic overview to find the most efficient model for your business.
+                    </p>
+                    <button class="bg-[#F28D35] hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-lg" style="font-family: 'Inter', sans-serif;">
+                        LEARN MORE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-semibold text-center mb-12 text-[#4F46E5]" style="font-family: 'Poppins', sans-serif;">Frequently asked questions</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-[#FAF8FF] p-6 rounded-lg faq-item">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-semibold text-[#000000] faq-question" style="font-family: 'Inter', sans-serif;">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</h3>
+                        <span class="text-xl text-gray-500">+</span>
+                    </div>
+                    <div class="faq-answer hidden mt-2">
+                        <p class="text-[#6F6C90]" style="font-family: 'Inter', sans-serif;">
+                            Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-[#FAF8FF] p-6 rounded-lg faq-item">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-semibold text-[#000000] faq-question" style="font-family: 'Inter', sans-serif;">Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?</h3>
+                        <span class="text-xl text-gray-500">+</span>
+                    </div>
+                    <div class="faq-answer hidden mt-2">
+                        <p class="text-[#6F6C90]" style="font-family: 'Inter', sans-serif;">
+                            Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-[#FAF8FF] p-6 rounded-lg faq-item">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-semibold text-[#000000] faq-question" style="font-family: 'Inter', sans-serif;">Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?</h3>
+                        <span class="text-xl text-gray-500">+</span>
+                    </div>
+                    <div class="faq-answer hidden mt-2">
+                        <p class="text-[#6F6C90]" style="font-family: 'Inter', sans-serif;">
+                            Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#4F46E5] text-white py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row md:justify-between gap-8">
+                <!-- Left Side: Logo + Paragraph -->
+                <div class="md:w-1/2">
+                    <div class="flex items-center mb-4">
+                        <div class="flex items-center">
+                            <img src="assets/logo.png" alt="AT DIGITAL Logo" class="h-10 mr-2">
+                            <img src="assets/logo1.png" alt="AT DIGITAL Logo" class="h-10 mr-2">
+                        </div>
+                    </div>
+                    <p class="text-[#FFFFFF]" style="font-family: 'Lato', sans-serif;">
+                        Your goal is our target. Not anything in between. We use<br>
+                        online marketing platforms and tools to achieve single<br>
+                        objective - your business results.
+                    </p>
+                </div>
+
+                <!-- Right Side: Technologies + Services -->
+                <div class="flex flex-col md:flex-row gap-12 md:w-1/2 md:justify-end">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4" style="font-family: 'Inter', sans-serif;">Our Technologies</h3>
+                        <ul class="space-y-2 text-[#FFFFFF]" style="font-family: 'Inter', sans-serif;">
+                            <li>ReactJS</li>
+                            <li>Gatsby</li>
+                            <li>NextJS</li>
+                            <li>NodeJS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4" style="font-family: 'Inter', sans-serif;">Our Services</h3>
+                        <ul class="space-y-2 text-[#FFFFFF]" style="font-family: 'Inter', sans-serif;">
+                            <li>Social Media Marketing</li>
+                            <li>Web & Mobile App Development</li>
+                            <li>Data & Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Length Border -->
+            <div class="border-t border-[#FFFFFF] w-full mx-auto mt-8 pt-2">
+                <div class="flex flex-row justify-center items-center space-x-4">
+                    <a href="#" class="hover:text-orange-400 transition duration-300" style="font-family: 'Inter', sans-serif;">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-orange-400 transition duration-300" style="font-family: 'Inter', sans-serif;">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ toggle functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const header = item.querySelector('div:first-child');
+                const answer = item.querySelector('.faq-answer');
+                const plusSign = item.querySelector('span');
+                const question = item.querySelector('.faq-question');
+                
+                header.addEventListener('click', () => {
+                    // Toggle the current item
+                    answer.classList.toggle('hidden');
+                    
+                    // Change the plus sign to minus when expanded
+                    if (answer.classList.contains('hidden')) {
+                        plusSign.textContent = '+';
+                        question.classList.remove('text-[#4F46E5]');
+                        question.classList.add('text-[#000000]');
+                    } else {
+                        plusSign.textContent = '-';
+                        question.classList.remove('text-[#000000]');
+                        question.classList.add('text-[#4F46E5]');
+                    }
+                    
+                    // Close other open items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.querySelector('.faq-answer').classList.add('hidden');
+                            otherItem.querySelector('span').textContent = '+';
+                            otherItem.querySelector('.faq-question').classList.remove('text-[#4F46E5]');
+                            otherItem.querySelector('.faq-question').classList.add('text-[#000000]');
+                        }
+                    });
+                });
+            });
+
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuClose = document.getElementById('menu-close');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            menuClose.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
